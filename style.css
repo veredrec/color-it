@@ -48,6 +48,58 @@ body {
   margin: 2rem;
   flex-grow: 1;
 }
+/* DRAWING */
+.drawing {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  z-index: -3;
+}
+.circle {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.large {
+  width: 150px;
+  height: 150px;
+}
+.medium {
+  width: 80px;
+  height: 80px;
+}
+.small {
+  width: 50px;
+  height: 50px;
+}
+.a {
+  top: 50px;
+  left: 500px;
+}
+.b {
+  top: 10px;
+  left: 210px;
+}
+.c {
+  top: 200px;
+  left: 70px;
+}
+.d {
+  top: 30px;
+  left: 100px;
+}
+.e {
+  top: 250px;
+  left: 330px;
+}
+.f {
+  top: 180px;
+  left: 450px;
+}
+.g {
+  top: 350px;
+  left: 100px;
+}
 /* COLORS */
 .colors {
   display: flex;
