@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+.logo {
+  font-size: 2.2rem;
+  color: #222;
+}
+.title {
+  font-size: 1.8rem;
+  color: #444;
+}
+/* MAIN SECTION */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.drawing,
+.colors {
+  border: 2px solid black;
+  height: 65vh;
+  margin: 1rem;
+}
+.drawing {
+  width: 70%;
+}
+.colors {
+  width: 30%;
+}
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.reset,
+.print {
+  font-size: 1.2rem;
+  color: orange;
+  background-color: yellow;
+  padding: 0.3rem;
+  margin: 2rem;
+  flex-grow: 1;
+}
+/* COLORS */
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.color {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.orange {
+  background-color: #ff6600;
+}
+.dark-green {
+  background-color: #336600;
+}
+.light-green {
+  background-color: #99ff33;
+}
+.turquoise {
+  background-color: #009999;
+}
+.light-blue {
+  background-color: #33ccff;
+}
+.blue {
+  background-color: #0033cc;
+}
+.purple {
+  background-color: #800080;
+}
+.pink {
+  background-color: #ff0066;
+}
+.red {
+  background-color: #ff0000;
+}
+.peach {
+  background-color: #ffbb99;
+}
+.brown {
+  background-color: #993300;
+}
+.black {
+  background-color: #000000;
+}
+.grey {
+  background-color: #222222;
+}
+.white {
+  background-color: #ffffff;
+}
