@@ -40,20 +40,22 @@ body {
   justify-content: center;
 }
 .reset,
-.print {
+.print,
+.noBorder {
   font-size: 1.2rem;
-  color: orange;
-  background-color: yellow;
+  color: #006666;
+  background-color: #4dffa6;
   padding: 0.3rem;
   margin: 2rem;
   flex-grow: 1;
+  border-radius: 5%;
+  border: none;
 }
 /* DRAWING */
 .drawing {
   width: 800px;
   height: 400px;
   position: relative;
-  z-index: -3;
 }
 .circle {
   position: absolute;
@@ -61,8 +63,8 @@ body {
   border-radius: 50%;
 }
 .large {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
 }
 .medium {
   width: 80px;
@@ -73,20 +75,20 @@ body {
   height: 50px;
 }
 .a {
-  top: 50px;
-  left: 500px;
+  top: 250px;
+  left: 380px;
 }
 .b {
   top: 10px;
   left: 210px;
 }
 .c {
-  top: 200px;
-  left: 70px;
+  top: 250px;
+  left: 520px;
 }
 .d {
   top: 30px;
-  left: 100px;
+  left: 500px;
 }
 .e {
   top: 250px;
@@ -97,8 +99,36 @@ body {
   left: 450px;
 }
 .g {
-  top: 350px;
+  top: 330px;
   left: 100px;
+}
+.h {
+  top: 240px;
+  left: 180px;
+}
+.i {
+  top: 110px;
+  left: 80px;
+}
+.j {
+  top: 100px;
+  left: 370px;
+}
+.k {
+  top: 5px;
+  left: 45px;
+}
+.l {
+  top: 260px;
+  left: 30px;
+}
+.m {
+  top: 95px;
+  left: 20px;
+}
+.n {
+  top: 120px;
+  left: 550px;
 }
 /* COLORS */
 .colors {
@@ -111,9 +141,12 @@ body {
 .color {
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
-  border: 1px solid black;
+  border-radius: 10%;
+  border: 1px solid grey;
   margin: 0.5rem;
+}
+.no-color {
+  background-color: #ffffff;
 }
 .yellow {
   background-color: #ffff00;
@@ -121,16 +154,16 @@ body {
 .orange {
   background-color: #ff6600;
 }
-.dark-green {
+.darkGreen {
   background-color: #336600;
 }
-.light-green {
+.green {
   background-color: #99ff33;
 }
 .turquoise {
   background-color: #009999;
 }
-.light-blue {
+.lightBlue {
   background-color: #33ccff;
 }
 .blue {
@@ -159,4 +192,7 @@ body {
 }
 .white {
   background-color: #ffffff;
+}
+.no-border {
+  border: none;
 }
