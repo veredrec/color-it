@@ -2,37 +2,37 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-family: 'Delius', cursive;
+  color: #092a47;
 }
 /* HEADER */
 .header {
+  margin-top: 1rem;
   display: flex;
-  justify-content: space-around;
-  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
-  font-size: 2.2rem;
-  color: #222;
+  font-size: 2.4rem;
+  border-bottom: 0.2rem solid #475f75;
 }
 .title {
-  font-size: 1.8rem;
-  color: #444;
+  font-size: 1.5rem;
+  margin-top: -1rem;
 }
 /* MAIN SECTION */
 .main {
   display: flex;
   justify-content: space-between;
-}
-.drawing,
-.colors {
-  border: 2px solid black;
-  height: 65vh;
-  margin: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 .drawing {
-  width: 70%;
+  border: 2px solid #475f75;
+  margin: 1rem;
 }
 .colors {
-  width: 30%;
+  width: 90%;
 }
 /* BUTTONS */
 .buttons {
@@ -40,21 +40,21 @@ body {
   justify-content: center;
 }
 .reset,
-.print,
 .noBorder {
   font-size: 1.2rem;
-  color: #006666;
-  background-color: #4dffa6;
+  color: #092a47;
+  background-color: #a3afba;
   padding: 0.3rem;
   margin: 2rem;
-  flex-grow: 1;
+  width: 20rem;
   border-radius: 5%;
   border: none;
+  font-family: 'Delius', cursive;
 }
 /* DRAWING */
 .drawing {
   width: 800px;
-  height: 400px;
+  height: 60vh;
   position: relative;
 }
 .circle {
@@ -76,7 +76,7 @@ body {
 }
 .a {
   top: 250px;
-  left: 380px;
+  left: 650px;
 }
 .b {
   top: 10px;
@@ -88,7 +88,7 @@ body {
 }
 .d {
   top: 30px;
-  left: 500px;
+  left: 520px;
 }
 .e {
   top: 250px;
@@ -96,7 +96,7 @@ body {
 }
 .f {
   top: 180px;
-  left: 450px;
+  left: 550px;
 }
 .g {
   top: 330px;
@@ -128,7 +128,7 @@ body {
 }
 .n {
   top: 120px;
-  left: 550px;
+  left: 650px;
 }
 /* COLORS */
 .colors {
@@ -139,10 +139,10 @@ body {
   align-content: center;
 }
 .color {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 10%;
-  border: 1px solid grey;
+  border: 1px solid #475f75;
   margin: 0.5rem;
 }
 .yellow {
