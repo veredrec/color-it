@@ -145,9 +145,6 @@ body {
   border: 1px solid grey;
   margin: 0.5rem;
 }
-.no-color {
-  background-color: #ffffff;
-}
 .yellow {
   background-color: #ffff00;
 }
@@ -191,6 +188,9 @@ body {
   background-color: #222222;
 }
 .white {
+  background-color: #ffffff;
+}
+.no-color {
   background-color: #ffffff;
 }
 .no-border {
