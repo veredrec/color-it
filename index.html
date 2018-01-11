@@ -4,16 +4,39 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7a1353cd80.js"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Paint It</title>
+  <title>Color It</title>
 </head>
 
 <body>
   <header class="header">
-    <h1 class="logo">PAINT IT</h1>
-    <p class="title">Choose your favorite colors and have some fun coloring!</p>
+    <h1 class="logo">COLOR IT</h1>
+    <p class="title">
+      <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+      Click on the area you would like to color. </p>
+      <p class="title"><i class="fa fa-paint-brush" aria-hidden="true"></i>
+      Choose the color you want!</p>
   </header>
   <section class="main">
+    <div class="colors">
+      <p class="color white" id="white"></p>
+      <p class="color yellow" id="yellow"></p>
+      <p class="color orange" id="orange"></p>
+      <p class="color peach" id="peach"></p>
+      <p class="color red" id="red"></p>
+      <p class="color pink" id="pink"></p>
+      <p class="color purple" id="purple"></p>
+      <p class="color blue" id="blue"></p>
+      <p class="color lightBlue" id="lightBlue"></p>
+      <p class="color darkGreen" id="darkGreen"></p>
+      <p class="color green" id="green"></p>
+      <p class="color turquoise" id="turquoise"></p>
+      <p class="color brown" id="brown"></p>
+      <p class="color black" id="black"></p>
+      <p class="color grey" id="grey"></p>
+    </div>
     <div class="drawing">
       <div class="circle large a" id="circa"></div>
       <div class="circle large b" id="circb"></div>
@@ -30,28 +53,10 @@
       <div class="circle small m" id="circm"></div>
       <div class="circle small n" id="circn"></div>
     </div>
-    <div class="colors">
-      <p class="color yellow" id="yellow"></p>
-      <p class="color orange" id="orange"></p>
-      <p class="color darkGreen" id="darkGreen"></p>
-      <p class="color green" id="green"></p>
-      <p class="color turquoise" id="turquoise"></p>
-      <p class="color lightBlue" id="lightBlue"></p>
-      <p class="color peach" id="peach"></p>
-      <p class="color blue" id="blue"></p>
-      <p class="color purple" id="purple"></p>
-      <p class="color pink" id="pink"></p>
-      <p class="color red" id="red"></p>
-      <p class="color brown" id="brown"></p>
-      <p class="color black" id="black"></p>
-      <p class="color grey" id="grey"></p>
-      <p class="color white" id="white"></p>
-    </div>
   </section>
   <div class="buttons">
-    <button class="reset" id="reset">RESET</button>
-    <button class="print" id="print">CAPTURE SCREEN</button>
-    <button class="noBorder" id="noBorder">REMOVE BORDER</button>
+    <button class="reset" id="reset">reset</button>
+    <button class="noBorder" id="noBorder">remove borders</button>
   </div>
   <script type="text/javascript" src="index.js"></script>
 </body>
