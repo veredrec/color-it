@@ -2,33 +2,32 @@ var reset = document.getElementById('reset');
 var print = document.getElementById('print');
 var noBorder = document.getElementById('noBorder');
 
-var currentElement;
+var currentElement = circa;
+
+var circles = document.querySelectorAll('.circle');
 
 // REMOVE BORDER
-
-// TODO: fix function so user can remove border from all elements
-// var circle = document.querySelectAll('circle');
-// var currentElement;
-//
-// noBorder.addEventListener('click', function() {
-//   circle.classList.add('border');
-// });
+noBorder.addEventListener('click', function() {
+  circles.forEach(function(c) {
+    c.classList.toggle('no-border');
+  });
+});
 
 // RESET COLORING
-// reset.addEventListener('click', function() {
-//   console.log('RESET');
-//   XXX.classList.add('no-color');
-// });
+reset.addEventListener('click', function() {
+  circles.forEach(function(c) {
+    c.classList.add('no-color');
+  });
+});
 
 // TODO: refactor code
 // PICK ELEMENT
 
-// var currentElement;
-//
-// var circles = document.querySelectorAll('.circle');
 // circles.forEach(function(circle) {
 //   circle.addEventListener('click', function() {
-//     currentElement = circle.id;
+//     circles.forEach(function(circle) {
+//       currentElement = circle.id;
+//     });
 //   });
 // });
 
@@ -112,11 +111,11 @@ circn.addEventListener('click', function() {
 var colors = document.querySelectorAll('.color');
 colors.forEach(function(color) {
   color.addEventListener('click', function() {
-    var classes = currentElement.classList;
+    var circleClasses = currentElement.classList;
     for (var i = 0; i < colorsArray.length; i++) {
-      for (var j = 0; j < classes.length; j++) {
-        if (colorsArray[i] === classes[j]) {
-          currentElement.classList.remove(classes[j]);
+      for (var j = 0; j < circleClasses.length; j++) {
+        if (colorsArray[i] === circleClasses[j]) {
+          currentElement.classList.remove(circleClasses[j]);
         }
       }
     }
