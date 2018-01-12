@@ -47,7 +47,8 @@ colorsArray = [
   'brown',
   'black',
   'grey',
-  'white'
+  'white',
+  'no-color'
 ];
 
 var circa = document.getElementById('circa');
