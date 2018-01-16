@@ -20,13 +20,13 @@ reset.addEventListener('click', function() {
   circles.forEach(function(c) {
     c.classList.add('no-color');
     c.classList.remove('no-border');
+    drawing.classList.add('no-color');
   });
 });
 
 // CHANGE BACKGROUND COLOR
 
-background.addEventListener('click', function() {
-  background.innerText = 'Select Color';
+backgroud.addEventListener('click', function() {
   currentElement = drawing;
 });
 
