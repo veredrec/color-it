@@ -1,6 +1,8 @@
 var reset = document.getElementById('reset');
 var print = document.getElementById('print');
 var noBorder = document.getElementById('noBorder');
+var backgroud = document.getElementById('background');
+var drawing = document.getElementById('drawing');
 
 var currentElement = circa;
 
@@ -19,6 +21,13 @@ reset.addEventListener('click', function() {
     c.classList.add('no-color');
     c.classList.remove('no-border');
   });
+});
+
+// CHANGE BACKGROUND COLOR
+
+background.addEventListener('click', function() {
+  background.innerText = 'Select Color';
+  currentElement = drawing;
 });
 
 // TODO: refactor code
