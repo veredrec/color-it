@@ -7,7 +7,6 @@ body {
 }
 /* HEADER */
 .header {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,48 +14,24 @@ body {
 }
 .logo {
   font-size: 2.4rem;
-  border-bottom: 0.2rem solid #475f75;
+  border-bottom: 0.1rem solid #475f75;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.2rem;
+  padding: 0.2rem;
 }
 .title {
-  font-size: 1.5rem;
-  margin-top: -1rem;
-}
-/* MAIN SECTION */
-.main {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
-.drawing {
-  border: 2px solid #475f75;
-  margin: 1rem;
-}
-.colors {
-  width: 90%;
-}
-/* BUTTONS */
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-.reset,
-.noBorder {
   font-size: 1.2rem;
-  color: #092a47;
-  background-color: #a3afba;
-  padding: 0.3rem;
-  margin: 2rem;
-  width: 20rem;
-  border-radius: 5%;
-  border: none;
-  font-family: 'Delius', cursive;
+  margin-top: -1rem;
 }
 /* DRAWING */
 .drawing {
   width: 800px;
-  height: 60vh;
+  height: 450px;
+  border: 2px solid #475f75;
+  display: block;
+  margin: 0 auto;
   position: relative;
+  background-color: #fef;
 }
 .circle {
   position: absolute;
@@ -131,13 +106,15 @@ body {
   top: 120px;
   left: 650px;
 }
-/* COLORS */
+/* COLORS*/
 .colors {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin-bottom: 1rem;
 }
 .color {
   width: 2.5rem;
@@ -191,9 +168,183 @@ body {
 .white {
   background-color: #ffffff;
 }
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.reset,
+.noBorder,
+.background {
+  font-size: 1.2rem;
+  color: #092a47;
+  background-color: #a3afba;
+  padding: 0.3rem;
+  margin: 1rem;
+  width: 15rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-family: 'Delius', cursive;
+}
+.pick {
+  font-size: 0.8rem;
+}
+/* SPECIAL CLASSES */
 .no-color {
   background-color: #ffffff;
 }
 .no-border {
   border: none;
+}
+.chosenCircle {
+  border: 1px solid orange;
+}
+/* SMALL DEVICES */
+@media screen and (max-width: 810px) {
+  .drawing {
+    width: 600px;
+    height: 300px;
+  }
+  .large {
+    width: 100px;
+    height: 100px;
+  }
+  .medium {
+    width: 60px;
+    height: 60px;
+  }
+  .small {
+    width: 30px;
+    height: 30px;
+  }
+  .a {
+    top: 70px;
+    left: 410px;
+  }
+  .b {
+    top: 10px;
+    left: 210px;
+  }
+  .c {
+    top: 200px;
+    left: 420px;
+  }
+  .d {
+    top: 30px;
+    left: 20px;
+  }
+  .e {
+    top: 200px;
+    left: 200px;
+  }
+  .f {
+    top: 220px;
+    left: 50px;
+  }
+  .g {
+    top: 230px;
+    left: 100px;
+  }
+  .h {
+    top: 190px;
+    left: 240px;
+  }
+  .i {
+    top: 110px;
+    left: 80px;
+  }
+  .j {
+    top: 110px;
+    left: 290px;
+  }
+  .k {
+    top: 25px;
+    left: 525px;
+  }
+  .l {
+    top: 30px;
+    left: 400px;
+  }
+  .m {
+    top: 95px;
+    left: 20px;
+  }
+  .n {
+    top: 180px;
+    left: 550px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .drawing {
+    width: 450px;
+    height: 200px;
+  }
+  .large {
+    width: 70px;
+    height: 70px;
+  }
+  .medium {
+    width: 45px;
+    height: 45px;
+  }
+  .small {
+    width: 20px;
+    height: 20px;
+  }
+  .a {
+    top: 70px;
+    left: 370px;
+  }
+  .b {
+    top: 10px;
+    left: 210px;
+  }
+  .c {
+    top: 150px;
+    left: 380px;
+  }
+  .d {
+    top: 30px;
+    left: 20px;
+  }
+  .e {
+    top: 160px;
+    left: 200px;
+  }
+  .f {
+    top: 120px;
+    left: 50px;
+  }
+  .g {
+    top: 90px;
+    left: 160px;
+  }
+  .h {
+    top: 10px;
+    left: 90px;
+  }
+  .i {
+    top: 110px;
+    left: 80px;
+  }
+  .j {
+    top: 110px;
+    left: 290px;
+  }
+  .k {
+    top: 20px;
+    left: 325px;
+  }
+  .l {
+    top: 30px;
+    left: 400px;
+  }
+  .m {
+    top: 95px;
+    left: 20px;
+  }
+  .n {
+    top: 170px;
+    left: 330px;
+  }
 }
