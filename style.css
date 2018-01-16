@@ -31,7 +31,6 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
-  background-color: #fef;
 }
 .circle {
   position: absolute;
@@ -185,6 +184,11 @@ body {
   border-radius: 0.8rem;
   border: none;
   font-family: 'Delius', cursive;
+}
+.reset:focus,
+.noBorder:focus,
+.background:focus {
+  outline: 0;
 }
 .pick {
   font-size: 0.8rem;
