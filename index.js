@@ -17,6 +17,7 @@ noBorder.addEventListener('click', function() {
 reset.addEventListener('click', function() {
   circles.forEach(function(c) {
     c.classList.add('no-color');
+    c.classList.remove('no-border');
   });
 });
 
@@ -48,7 +49,8 @@ colorsArray = [
   'black',
   'grey',
   'white',
-  'no-color'
+  'no-color',
+  'chosenCircle'
 ];
 
 var circa = document.getElementById('circa');
@@ -68,45 +70,59 @@ var circn = document.getElementById('circn');
 
 circa.addEventListener('click', function() {
   currentElement = circa;
+  circa.classList.add('chosenCircle');
 });
 circb.addEventListener('click', function() {
   currentElement = circb;
+  circb.classList.add('chosenCircle');
 });
 circc.addEventListener('click', function() {
   currentElement = circc;
+  circc.classList.add('chosenCircle');
 });
 circd.addEventListener('click', function() {
   currentElement = circd;
+  circd.classList.add('chosenCircle');
 });
 circe.addEventListener('click', function() {
   currentElement = circe;
+  circe.classList.add('chosenCircle');
 });
 circf.addEventListener('click', function() {
   currentElement = circf;
+  circf.classList.add('chosenCircle');
 });
 circg.addEventListener('click', function() {
   currentElement = circg;
+  circg.classList.add('chosenCircle');
 });
 circh.addEventListener('click', function() {
   currentElement = circh;
+  circh.classList.add('chosenCircle');
 });
 circi.addEventListener('click', function() {
   currentElement = circi;
+  circi.classList.add('chosenCircle');
 });
 circj.addEventListener('click', function() {
   currentElement = circj;
+  circj.classList.add('chosenCircle');
 });
 circk.addEventListener('click', function() {
   currentElement = circk;
+  circk.classList.add('chosenCircle');
 });
 circl.addEventListener('click', function() {
   currentElement = circl;
+  circl.classList.add('chosenCircle');
 });
 circm.addEventListener('click', function() {
   currentElement = circm;
+  circm.classList.add('chosenCircle');
 });
 circn.addEventListener('click', function() {
   currentElement = circn;
+  circn.classList.add('chosenCircle');
 });
 
 var colors = document.querySelectorAll('.color');
