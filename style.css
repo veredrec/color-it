@@ -184,11 +184,18 @@ body {
   border-radius: 0.8rem;
   border: none;
   font-family: 'Delius', cursive;
+  transition: all 0.8s ease-in-out;
 }
 .reset:focus,
 .noBorder:focus,
 .background:focus {
   outline: 0;
+}
+.reset:hover,
+.noBorder:hover,
+.background:hover {
+  color: #02232a;
+  background-color: #a3ffba;
 }
 .pick {
   font-size: 0.8rem;
