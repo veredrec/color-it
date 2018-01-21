@@ -148,3 +148,8 @@ colors.forEach(function(color) {
     currentElement.classList.add(this.id);
   });
 });
+
+function openHowTo() {
+  var howTo = document.getElementById('howTo');
+  howTo.classList.toggle('show-how-to');
+}
