@@ -14,12 +14,18 @@
 <body>
   <header class="header">
     <h1 class="logo">COLOR IT</h1>
-    <p class="title">
-      <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-      Click on the area you would like to color. </p>
-      <p class="title">
-        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-      Choose the color you want! </p>
+    <div class="title" onclick="openHowTo()">
+      <i class="fa fa-hand-o-up" aria-hidden="true">
+        How to color?</i>
+      <div class="how-to-text" id="howTo">
+        <p class="title">
+          <i class="fa fa-paint-brush" aria-hidden="true">
+            Click on the area you would like to color </i><br>
+          <i class="fa fa-paint-brush" aria-hidden="true">
+            Choose the color you want and have fun!</i>
+        </p>
+      </div>
+    </div>
   </header>
   <section class="main">
     <div class="colors">
