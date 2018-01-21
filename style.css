@@ -21,27 +21,38 @@ body {
 }
 
 /* How-to popup container */
-.title {
-  font-size: 1.4rem;
-  margin: 1rem;
+.popup-button {
+  font-size: 1.2rem;
+  padding: 0.6rem;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: #092a47;
+  background-color: #a3afba;
+  margin: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-family: 'Delius', cursive;
+}
+.popup-button:focus {
+  outline: 0;
 }
 /* How-to area */
 .title .how-to-text {
   visibility: hidden;
-  width: 30rem;
+  font-family: 'Delius', cursive;
+  width: 25rem;
   background-color: #475f75;
   color: #fff;
   text-align: center;
   border-radius: 1rem;
-  padding: 0.3rem;
+  padding: 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  bottom: 110%;
   margin-left: -10rem;
   opacity: 0.9;
+  font-size: 1.1rem;
 }
 /* Popup arrow */
 .title .how-to-text::after {
